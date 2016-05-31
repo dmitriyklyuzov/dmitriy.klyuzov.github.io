@@ -52,7 +52,7 @@ body{
 }
 
 /*Remove margin-top from h1 when the navbar is collapsed, so its centered*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.brand{
 		margin-top: 0px;
 	}
