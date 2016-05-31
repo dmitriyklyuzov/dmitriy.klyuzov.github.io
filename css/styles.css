@@ -1,4 +1,4 @@
-* {
+*{
   border-radius: 0 !important;
 }
 
@@ -13,18 +13,23 @@ body{
 /*}*/
 
 .navbar{
-	color: #555;
+	color: #333;
 }
 
 /*Navbar links color*/
 .navbar .navbar-nav li a {
-    color: #555;
+    color: #333;
 }
 
 /*Brand color*/
-.navbar .navbar-brand{
+
+.phone{
     color: #f0ad4e;
     /*padding-top:8px;*/
+}
+
+#brand{
+	color: #333;
 }
 
 /*Remove margin-top from h1 when the navbar is collapsed, so its centered*/
@@ -50,22 +55,29 @@ body{
 	/*padding-bottom: 10px;*/
 }
 
+
+#contact-button{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+#contact-button{
+	margin-top: 20px;
+	padding: 18px 20px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
 #jumbotron-main.jumbotron{
 	background: url("../img/jumbotron/city.jpg") no-repeat center center;
 	background-size: cover;
-	/*background-repeat: no-repeat;*/
+	min-height: 93vh;
+}
+
+#jumbotron-whatwedo.jumbotron{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/jumbotron/2.jpg") no-repeat center center;
+	background-size: cover;
 	min-height: 600px;
-	/*position: fixed;*/
-	/*background-attachment: fixed;*/
-}
-
-.glyphicon{
-	font-size: 5em;
-}
-
-
-/*colors*/
-
-.color-555{
-	color: #555;
 }

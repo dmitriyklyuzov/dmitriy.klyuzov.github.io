@@ -8,7 +8,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/sizing.css">
+		<link rel="stylesheet" type="text/css" href="css/presets.css">
 		
 		<!-- JS -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -19,7 +19,7 @@
 		
 	</head>
 
-	<body data-spy="scroll" data-target="#myNavbar" data-offset="50">	
+	<body data-spy="scroll" data-target="#myNavbar" data-offset="100">	
 		<!-- Navigation -->
 		<div class="navbar navbar-default navbar-fixed-top" id="navbar">
 			<div class="container-fluid">
@@ -29,12 +29,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="tel:1-347-555-5555"><h4  id="brand">(347) 555-5555</h4></a>
+					<a class="navbar-brand hidden-xs" href="tel:1-555-555-5555"><h4 id="brand">CALL NOW <span class="phone">(555) 555 5555</span></h4></a>
+					<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="tel:1-555-555-5555"><h4 id="brand" class="phone">(555) 555 5555</h4></a>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li><a href="#about-us"><h4>ABOUT</h4></a></li>
-						<li><a href="#what-we-do"><h4>AREAS OF PRACTICE</h4></a></li>
+						<li><a href="#what-we-do"><h4>EXPERTISE</h4></a></li>
+						<li><a href="#me"><h4>ME</h4></a></li>
 						<li><a href="#contact"><h4>CONTACT</h4></a></li>
 					</ul>	
 				</div>
@@ -42,122 +44,145 @@
 		</div>
 
 		<!-- Jumbotron -->
-		<div class="jumbotron" id="jumbotron-main">
-			<div class="container text-center">
-				<h1 class="margin-top-70 margin-bottom-0 color-555">USTEN LAW</h1>
-				<h1 class="margin-top-0"><small>Qualified legal advice.</small></h1>
-				<button type="button" class="btn-lg btn-warning margin-top-70">Contact Usten Law</button>
-			</div>
-		</div>
 
-		<!-- Who we are -->
-		<div class="container">
-			<div id="about-us">
-				<div class="row">
-					<div class="text-center">
-							<h1 class="text-center margin-top-30 padding-top-60">Who we are</h1>
+		<div id="home">
+			<div class="jumbotron" id="jumbotron-main">
+				<div class="container text-center">
+					<h1 class="margin-top-70 margin-bottom-0">USTEN LAW</h1>
+					<h1 class="margin-top-0"><small>Qualified legal advice.</small></h1>
+					<!-- <button type="button" id="contact-button" role="button" class="btn-lg btn-warning margin-top-70"><h2 class="margin-top-10">Contact us today</h2></button> -->
+					<div id="myButton" class="margin-top-70">
+						<a href="#contact" id="contact-button" class="btn-lg btn-warning">Contact us today</a>	
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2
-											col-md-10 col-md-offset-1
-											col-sm-10 col-sm-offset-1
-											col-xs-12">
-						<hr>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2
-											col-md-10 col-md-offset-1
-											col-sm-10 col-sm-offset-1
-											col-xs-12">
-						<!-- <hr> -->
-						<p class="text-justify">Usten Law's collaborative approach is entrepreneurially inspired and client focused. Clients grow with us over time. They hire us because of our reputation and our experience, and then build longstanding allegiances based on results and the collegial process by which they are achieved. Our focus on client service includes: A pragmatic approach to the practice of law that puts the client first and forms the basis for longstanding relationships Best-in-class practices that are frequently recognized by peers, clients and independent review publications An attention to successful collaboration that encourages our bright and energetic lawyers to serve clients' needs while maintaining high ethical standards and treating others with respect Lawyers who possess the legal knowledge and experience to handle any transaction and the ability to communicate effectively with clients.</p>
-					</div>
+					
 				</div>
 			</div>
 		</div>
+		
+		
+		<div id="about-us">
+			<div class="jumbotron background-color-white" id="jumbotron-about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1">
+							<h1 class="text-center">Who we are</h1>
+							<hr class="btn-warning">
+							<p class="text-justify">Usten Law's collaborative approach is entrepreneurially inspired and client focused. Clients grow with us over time. They hire us because of our reputation and our experience, and then build longstanding allegiances based on results and the collegial process by which they are achieved. Our focus on client service includes: A pragmatic approach to the practice of law that puts the client first and forms the basis for longstanding relationships Best-in-class practices that are frequently recognized by peers, clients and independent review publications An attention to successful collaboration that encourages our bright and energetic lawyers to serve clients' needs while maintaining high ethical standards and treating others with respect Lawyers who possess the legal knowledge and experience to handle any transaction and the ability to communicate effectively with clients.</p>
+						</div> <!-- col -->
+					</div> <!-- row -->
+				</div> <!-- container -->
+			</div> <!-- jumbotron -->
+		</div> <!-- #about-us -->
 
 		<!-- What we do -->
-
-		<div class="container">
-			<div id="what-we-do">
-				<div class="row">
-					<div class="text-center">
-						<h1 class="text-center margin-top-30 padding-top-60">What we do</h1>
-					</div>
-				</div>
-
-				<div class="row">
-						<div class="col-lg-8 col-lg-offset-2
-												col-md-10 col-md-offset-1
-												col-sm-10 col-sm-offset-1
-												col-xs-12">
-							<hr>
-						</div>
-				</div>
-				
-				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+		<div id="what-we-do">
+			<div class="jumbotron" id="jumbotron-whatwedo">
+				<div class="container color-white">
+					<div class="row">
+						<h1 class="text-center">What we do</h1>
+					</div> <!-- row 1 -->
 					
-					<div class="row margin-top-20">
+					<hr class="btn-warning text-center">
+
+					<div class="row">
 						
 						<div class="col-lg-4 col-lg-offset-1">
-								<h3 class="text-center">Business law</h3>
-								<p class="text-justify margin-top-50">Usten Law advises businesses, we counsel businesses during all stages of their lifecycles: from formation to operation, to expansion via merger or acquisition, to dissolution. As a mentor to startups, we work with seed and early-stage companies and startups, helping them refine business, financing and technology strategies to help enable rapid growth.</p>
+							<h2 class="text-center padding-bottom-30">Business Law</h2>
+							<p class="text-justify">Usten Law advises businesses, we counsel businesses during all stages of their lifecycles: from formation to operation, to expansion via merger or acquisition, to dissolution. As a mentor to startups, we work with seed and early-stage companies and startups, helping them refine business, financing and technology strategies to help enable rapid growth.</p>
 						</div>
 
 						<div class="col-lg-4 col-lg-offset-2">
-								<h3 class="text-center">Civil Litigation</h3>
-								<p class="text-justify margin-top-50">Usten Law, P.C. will take you through the entire process of filing and pursuing a non-criminal lawsuit. An attorney can also advise you on whether your case is best suited for court, or can be handled better outside of the courtroom.</p>
+							<h2 class="text-center padding-bottom-30">Civil Litigation</h2>
+							<p class="text-justify">Usten Law, P.C. will take you through the entire process of filing and pursuing a non-criminal lawsuit. An attorney can also advise you on whether your case is best suited for court, or can be handled better outside of the courtroom.</p>
 						</div>
 
-					</div> <!-- row -->
+					</div> <!-- row 2 -->
 
-					<div class="row margin-top-20">
+					<div class="row">
 						<div class="col-lg-4 col-lg-offset-1">
-								<h3 class="text-center">Personal Injury</h3>
-								<p class="text-justify margin-top-50">Usten Law are a team of experienced attorneys and staff who help you secure long term justice. The insurance companies make their billions by denying or minimizing your claims. Our job is to help ensure that they treat you fairly.</p>
+							<h2 class="text-center padding-bottom-30">Personal Injury</h2>
+							<p class="text-justify">Usten Law are a team of experienced attorneys and staff who help you secure long term justice. The insurance companies make their billions by denying or minimizing your claims. Our job is to help ensure that they treat you fairly.</p>
 						</div>
-						<div class="col-lg-4 col-lg-offset-2">
-								<h3 class="text-center">Real estate</h3>
-								<p class="text-justify margin-top-50">Our law firm is known for its in-depth knowledge of the New York real estate market. This level of understanding, combined with our sound business sense, allows us to exceed our clients' expectations, however complex their case may be.</p>
-						</div>
-					</div>
-				
-				</div> <!-- col -->
-			</div> <!-- what we do -->
-		</div> <!-- container -->
 
-		<div class="container">
-			<div id="contact">
-				<div class="row">
-					<div class="text-center">
-						<h1 class="text-center margin-top-30 padding-top-60">Where we are</h1>
+						<div class="col-lg-4 col-lg-offset-2">
+							<h2 class="text-center padding-bottom-30">Real Estate</h2>
+							<p class="text-justify">Our law firm is known for its in-depth knowledge of the New York real estate market. This level of understanding, combined with our sound business sense, allows us to exceed our clients' expectations, however complex their case may be.</p>
+						</div>
+					</div> <!-- row 3 -->
+
+				</div> <!-- container color-white -->
+			</div> <!-- jumbotron -->
+		</div> <!-- #what-we-do -->
+		
+
+		<div id="me">
+			<div class="jumbotron background-color-white">
+				<div class="container">
+					<h1 class="text-center">The lawyer</h1>
+
+					<hr class="margin-top-40 btn-warning">
+
+					<div class="col-lg-3">
+						<div class="thumbnail">
+							<img class="" src="img/profile/headshot.jpg" alt="John Smith">	
+							<p class="text-center padding-top-10">John Smith</p>
+						</div>
 					</div>
+
+					<div class="col-lg-3">
+						<h2 class="text-center padding-bottom-30">Education</h2>
+						<ul>
+							<li><p>St. Johns University - B.S., 2008</p></li>
+							<li><p>St. Thomas University School of Law - J.D., 2014</p></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3">
+						<h2 class="text-center padding-bottom-30">Licences</h2>
+						<p>Admitted to the United States District Court Southern District of New York</p>
+					</div>
+
+					<div class="col-lg-3">
+						<h2 class="text-center padding-bottom-30">Associations</h2>
+							<li><p>New York Bar Association</p></li>
+							<li><p>New York City Bar Association</p></li>
+							<li><p>Queens County Bar Association</p></li>
+					</div>
+
 				</div>
 			</div>
-			
-			<div class="row">
-						<div class="col-lg-8 col-lg-offset-2
-												col-md-10 col-md-offset-1
-												col-sm-10 col-sm-offset-1
-												col-xs-12">
-							<hr>
-					</div>
-			</div>
-
-			<div class="margin-top-20 col-lg-10 col-lg-offset-1">
-				<iframe
-					width="100%"
-					height="600"
-					frameborder="0" style="border:0"
-					src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAu4PV7HDl3-qeKVI_ZyMQ4j7b2csHchGY
-						&zoom=18
-						&q=Usten+Law+P.C." allowfullscreen>
-				</iframe>
-			</div>
 		</div>
+
+
+		<div id="contact">
+			<div class="jumbotron background-color-white">
+				<div class="container">
+
+					<div class="col-lg-10 col-lg-offset-1">
+						<h1 class="text-center">Where we are</h1>
+
+						<hr class="margin-top-40 btn-warning">
+
+						<h3 class="text-center">113-25 Queens Blvd. Suite 113 Forest Hills NY 11375</h3>
+						<div class="margin-top-40">
+							<iframe
+								width="100%"
+								height="600"
+								frameborder="0" style="border:0"
+								src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAu4PV7HDl3-qeKVI_ZyMQ4j7b2csHchGY
+								&zoom=18
+								&q=Usten+Law+P.C." allowfullscreen>
+							</iframe>
+						</div> <!--  margin-top-20 -->
+					</div> <!-- col -->
+
+					<div id="social" class="col-lg-10 col-lg-offset-1">
+						
+					</div>
+
+				</div> <!-- container -->
+			</div> <!-- jumbotron -->
+		</div> <!-- #contact -->
+
 	</body>
 </html>
